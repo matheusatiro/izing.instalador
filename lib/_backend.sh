@@ -25,7 +25,7 @@ backend_db_create() {
                 -p 5432:5432 \
                 --restart=always \
                 -v /data:/var/lib/postgresql/data \
-                -d postgres
+                -d postgres:14
 
   docker run --name redis-izing \
                 -e TZ="America/Sao_Paulo" \
